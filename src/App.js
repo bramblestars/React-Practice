@@ -1,9 +1,12 @@
 import logo from './logo.svg';
 import CounterApp from './components/CounterApp/CounterApp'
+import Header from './components/shared/Header'
 
 function App() {
   return (
-    <CounterApp title="Counter App"/>
+    <div>
+        <Header />
+    </div>
   );
 }
 
