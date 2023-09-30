@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import CounterApp from './components/CounterApp/CounterApp'
+// import logo from './logo.svg';
 import Header from './components/shared/Header'
 
 function App() {

@@ -1,3 +1,49 @@
 .title {
-    font-size: 50px;
+  font-size: 5rem;
 }
+
+nav.navbar {
+  padding: 10px 30px;
+}
+
+.navbar .navbar-brand {
+  margin-right: 30px;
+  font-size: 27px;
+  letter-spacing: 1px;
+  color: #7ce3ff;
+  font-weight: bold;
+}
+.navbar .nav-item .navbar .nav-item {
+  font-size: 18px;
+}
+.navbar .bwm-search {
+  height: 40px;
+  width: 250px;
+}
+.navbar .navbar-dark .navbar-nav .nav-link:hover {
+  color: #7ce3ff;
+}
+
+.search-btn {
+  border-color: #7ce3ff;
+  color: #7ce3ff;
+}
+
+.search-btn:hover {
+  background-color: #7ce3ff;
+  color: black;
+}
+
+.nav-link {
+  color: white;
+}
+
+.search-bar {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-nav {
+  position: fixed;
+  right: 2rem;
+}/*# sourceMappingURL=index.css.map */
