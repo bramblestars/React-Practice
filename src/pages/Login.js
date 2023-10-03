@@ -1,5 +1,5 @@
 import React from 'react';
-import { StateContext } from '../stateContext';
+import connect from '../store/connect';
 
 class Login extends React.Component {
 
@@ -10,6 +10,4 @@ class Login extends React.Component {
     }
 }
 
-Login.contextType = StateContext;
-
-export default Login;
+export default connect(Login);

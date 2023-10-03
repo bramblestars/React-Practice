@@ -1,4 +1,4 @@
-exports.rentals = [{
+exports.rentalData = [{
     _id: '1',
     title: "Nice view on ocean",
     city: "San Francisco",

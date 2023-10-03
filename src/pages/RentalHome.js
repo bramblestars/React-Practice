@@ -1,6 +1,6 @@
 import React from 'react';
 import RentalCard from '../components/rental/RentalCard';
-import { StateContext } from '../stateContext';
+import connect from '../store/connect';
 
 
 class RentalHome extends React.Component {
@@ -10,10 +10,10 @@ class RentalHome extends React.Component {
     }
 
     componentDidMount() {
-        const store = this.context;
+        const { rentals } = this.props;
         this.setState({
-            rentals: store.rentals()
-        })
+          rentals: rentals()
+        });
     }
 
     renderRentals = (rentals) => 
@@ -24,10 +24,10 @@ class RentalHome extends React.Component {
     );
 
     render() {
+        
         const { rentals } = this.state;
 
         return (
-
             <div className="card-list">
                 <h1 className="page-title">Your Home All Around the World</h1>
                 <div className="row">
@@ -38,6 +38,4 @@ class RentalHome extends React.Component {
     }
 }
 
-RentalHome.contextType = StateContext;
-
-export default RentalHome;
+export default connect(RentalHome);
