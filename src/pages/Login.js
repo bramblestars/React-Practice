@@ -1,4 +1,5 @@
 import React from 'react';
+import { StateContext } from '../stateContext';
 
 class Login extends React.Component {
 
@@ -8,5 +9,7 @@ class Login extends React.Component {
         )
     }
 }
+
+Login.contextType = StateContext;
 
 export default Login;
