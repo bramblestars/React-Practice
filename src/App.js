@@ -4,7 +4,10 @@ import RentalHome from './pages/RentalHome';
 
 import Login from './pages/Login';
 import Register from './pages/Register';
-import { Router, Route } from './components/Router'
+import { BrowserRouter as Router, 
+         Routes,
+         Route
+} from 'react-router-dom';
 
 function App() {
 
@@ -27,7 +30,13 @@ function App() {
         <div>
             <Router>
                 <Header />
-                { renderPages() }
+                <div class="container bwm-container">
+                    <Routes>
+                        <Route path="/" element={ <RentalHome/> } />
+                        <Route path="/login" element={ <Login/> } />
+                        <Route path="/register" element={ <Register/> } />
+                    </Routes>
+                </div>
             </Router>
         </div>
     );

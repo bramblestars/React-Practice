@@ -1,7 +1,7 @@
 import React from 'react';
 import RentalCard from '../components/rental/RentalCard';
 
-class RentalHome extends React.Component {
+class RentalHome extends React.Component{
 
     constructor() {
         super();
@@ -55,11 +55,9 @@ class RentalHome extends React.Component {
         return (
 
             <div className="card-list">
-                <div className="container">
-                    <h1 className="page-title">Your Home All Around the World</h1>
-                    <div className="row">
-                        { this.renderRentals(rentals) }
-                    </div>
+                <h1 className="page-title">Your Home All Around the World</h1>
+                <div className="row">
+                    { this.renderRentals(rentals) }
                 </div>
             </div>
           )

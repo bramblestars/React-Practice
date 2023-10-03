@@ -4,9 +4,6 @@
   margin-bottom: 20px;
 }
 
-.card-list {
-  padding-top: 70px;
-}
 .card-list .bwm-card {
   border: none;
 }
@@ -68,6 +65,10 @@ html, body {
 }
 .type-condo {
   color: #d68000;
+}
+
+.bwm-container {
+  padding-top: 70px;
 }
 
 .search-btn {
